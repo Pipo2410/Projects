@@ -1,0 +1,48 @@
+.form {
+    padding: 3rem;
+    width: 50%;
+
+    &__group {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__input {
+        width: 90%;
+        color: inherit;
+        font-family: inherit;
+        font-size: 1.5rem;
+        background-color: rgba($color-white, .9);
+        display: block;
+        padding: 1.5rem 2rem;
+        border: none;
+
+        &:hover {
+            outline: none;
+
+            
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+    
+    &__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        display: block;
+        margin-left: 2rem;
+        transform: translateY(0);
+        transition: all .3s;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__input:placeholder-shown + &__label{
+        transform: translateY(-3.2rem);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
