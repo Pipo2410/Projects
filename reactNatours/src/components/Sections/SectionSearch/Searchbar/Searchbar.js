@@ -10,24 +10,34 @@ const getSuggestionValue = (suggestion) => suggestion.name;
 
 // Use your imagination to render suggestions.
 const renderSuggestion = (suggestion) => {
-  if (suggestion.hasOwnProperty('url')) {
-    return (<div className="react-autosuggest__suggestion">
-      <img src={suggestion.url} alt="just shit" width={30} className="react-autosuggest__suggestion-image"/>
-      <p>{suggestion.text}</p>
-    </div>)
+  if (suggestion.hasOwnProperty("url")) {
+    return (
+      <React.Fragment>
+        <img
+          src={suggestion.url}
+          alt="just shit"
+          width={30}
+          className="react-autosuggest__suggestion-image"
+        />
+        <p>{suggestion.text}</p>
+      </React.Fragment>
+    );
   }
 
   return <p>{suggestion.text}</p>;
 };
 
-const onSuggestionSelected = (event, { suggestion, suggestionValue, suggestionIndex, sectionIndex, method }) => {
+const onSuggestionSelected = (
+  event,
+  { suggestion, suggestionValue, suggestionIndex, sectionIndex, method }
+) => {
   console.log(suggestion);
   console.log(window.location);
 
-  if (suggestion.hasOwnProperty('url')) {
-  window.location.replace('http://127.0.0.1:8000');
+  if (suggestion.hasOwnProperty("url")) {
+    window.location.replace("http://127.0.0.1:8000");
   }
-}
+};
 
 const renderSectionTitle = (section) => {
   return <strong>{section.title}</strong>;
@@ -159,4 +169,4 @@ class Searchbar extends Component {
   }
 }
 
-export default withClass(Searchbar, 'col-1-of-2');
+export default withClass(Searchbar, "col-1-of-2");

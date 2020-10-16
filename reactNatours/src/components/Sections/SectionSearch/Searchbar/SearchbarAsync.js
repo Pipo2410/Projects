@@ -10,21 +10,31 @@ const getSuggestionValue = (suggestion) => suggestion.name;
 
 // Use your imagination to render suggestions.
 const renderSuggestion = (suggestion) => {
-  if (suggestion.hasOwnProperty('url')) {
-    return (<div className="react-autosuggest__suggestion">
-      <img src={suggestion.url} alt="just shit" width={30} className="react-autosuggest__suggestion-image"/>
-      <p>{suggestion.text}</p>
-    </div>)
+  if (suggestion.hasOwnProperty("url")) {
+    return (
+      <React.Fragment>
+        <img
+          src={suggestion.url}
+          alt="just shit"
+          width={30}
+          className="react-autosuggest__suggestion-image"
+        />
+        <p>{suggestion.text}</p>
+      </React.Fragment>
+    );
   }
 
   return <p>{suggestion.text}</p>;
 };
 
-const onSuggestionSelected = (event, { suggestion, suggestionValue, suggestionIndex, sectionIndex, method }) => {
-  if (suggestion.hasOwnProperty('url')) {
-  window.location.replace('http://127.0.0.1:8000');
+const onSuggestionSelected = (
+  event,
+  { suggestion, suggestionValue, suggestionIndex, sectionIndex, method }
+) => {
+  if (suggestion.hasOwnProperty("url")) {
+    window.location.replace("http://127.0.0.1:8000");
   }
-}
+};
 
 const renderSectionTitle = (section) => {
   return <strong>{section.title}</strong>;
@@ -66,8 +76,7 @@ class Searchbar extends Component {
     });
   };
 
-  componentDidMount() {
-  }
+  componentDidMount() {}
 
   escapeRegexCharacters = (str) => {
     return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -98,18 +107,17 @@ class Searchbar extends Component {
   // Autosuggest will call this function every time you need to update suggestions.
   // You already implemented this logic above, so just use it.
   onSuggestionsFetchRequested = ({ value }) => {
-
-      axios
-          .get("http://127.0.0.1:8000/searchbar")
-          // .get("https://run.mocky.io/v3/881db654-efe0-4412-9dd8-bdd08d903e9e")
-          .then((response) => {
-            this.setState({
-              suggestions: this.getSuggestions(value, response.data)
-            });
-          })
-          .catch((res) => {
-            alert("Page not found");
-          });
+    axios
+      .get("http://127.0.0.1:8000/searchbar")
+      // .get("https://run.mocky.io/v3/881db654-efe0-4412-9dd8-bdd08d903e9e")
+      .then((response) => {
+        this.setState({
+          suggestions: this.getSuggestions(value, response.data),
+        });
+      })
+      .catch((res) => {
+        alert("Page not found");
+      });
 
     // this.setState({
     //   suggestions: this.getSuggestions(value),
@@ -151,4 +159,4 @@ class Searchbar extends Component {
   }
 }
 
-export default withClass(Searchbar, 'col-1-of-2');
+export default withClass(Searchbar, "col-1-of-2");
