@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Autosuggest from "react-autosuggest";
+import withClass from "../../../../hoc/withClass";
 
 // When suggestion is clicked, Autosuggest needs to populate the input
 // based on the clicked suggestion. Teach Autosuggest how to calculate the
@@ -11,7 +12,7 @@ const getSuggestionValue = (suggestion) => suggestion.name;
 const renderSuggestion = (suggestion) => {
   if (suggestion.hasOwnProperty('url')) {
     return (<div className="react-autosuggest__suggestion">
-      <img src={suggestion.url} width={30} className="react-autosuggest__suggestion-image"/>
+      <img src={suggestion.url} alt="just shit" width={30} className="react-autosuggest__suggestion-image"/>
       <p>{suggestion.text}</p>
     </div>)
   }
@@ -71,7 +72,8 @@ class Searchbar extends Component {
 
   componentDidMount() {
     axios
-      .get("http://127.0.0.1:8000/searchbar")
+      // .get("http://127.0.0.1:8000/searchbar")
+      .get("https://run.mocky.io/v3/881db654-efe0-4412-9dd8-bdd08d903e9e")
       .then((response) => {
         // console.log(response.data);
         this.setState({
@@ -157,4 +159,4 @@ class Searchbar extends Component {
   }
 }
 
-export default Searchbar;
+export default withClass(Searchbar, 'col-1-of-2');

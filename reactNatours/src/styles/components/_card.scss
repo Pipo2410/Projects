@@ -161,12 +161,12 @@
     right: 2rem;
     width: 75%;
 
-    &--span {
+    &-span {
       padding: 1rem 1.5rem;
       -webkit-box-decoration-break: clone;
       box-decoration-break: clone;
 
-      &-1 {
+      &--1 {
         background-image: -webkit-gradient(
           linear,
           left top,
@@ -181,7 +181,7 @@
         );
       }
 
-      &-2 {
+      &--2 {
         background-image: -webkit-gradient(
           linear,
           left top,
@@ -196,7 +196,7 @@
         );
       }
 
-      &-3 {
+      &--3 {
         background-image: -webkit-gradient(
           linear,
           left top,

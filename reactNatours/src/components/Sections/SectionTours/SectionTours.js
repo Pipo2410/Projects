@@ -12,8 +12,8 @@ const Tours = (props) => {
   }, []);
 
   async function getItems() {
-    // fetch("http://www.mocky.io/v2/5e559f4131000010fdeb3951")
-    fetch("http://127.0.0.1:8000/tours")
+    fetch("https://run.mocky.io/v3/dee305d4-2a0c-4370-855a-c50e904b833f")
+    // fetch("http://127.0.0.1:8000/tours")
       .then((results) => results.json())
       .then((results) =>
         setTours({

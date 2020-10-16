@@ -11,8 +11,8 @@ const Features = (props) => {
   }, []);
 
   async function getItems() {
-    // fetch("http://www.mocky.io/v2/5e5592c431000010fdeb392f")
-    fetch("http://127.0.0.1:8000/features")
+    fetch("https://run.mocky.io/v3/f889cceb-bc7f-4423-a7b5-0ad236654031")
+    // fetch("http://127.0.0.1:8000/features")
       .then((results) => results.json())
       .then((results) =>
         setFeatures({
