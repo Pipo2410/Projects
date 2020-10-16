@@ -1,5 +1,6 @@
 import React from "react";
 import Searchbar from "./Searchbar/Searchbar";
+import SearchbarAsync from "./Searchbar/SearchbarAsync";
 import VideoBackground from "./Video-bg";
 
 const SectionSearch = (props) => {
@@ -11,6 +12,7 @@ const SectionSearch = (props) => {
       </div>
       <div className="row">
         <Searchbar></Searchbar>
+          <SearchbarAsync></SearchbarAsync>
       </div>
     </div>
   );
