@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>
+      CodeMaster | Bootcamps for future elite in web development indistry
+    </title>
+  </head>
+
+  <body>
+    <div class="navigation">
+      <input type="checkbox" id="navi-toggle" class="navigation__checkbox" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link"><span>01</span>About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#features" class="navigation__link"
+              ><span>02</span>benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#tours" class="navigation__link"
+              ><span>03</span>Popular bootcamps</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#stories" class="navigation__link"
+              ><span>04</span>Stories</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#book" class="navigation__link"><span>05</span>Book now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">CodeMaster</span>
+          <span class="heading-primary--sub"
+            >We'll help you build your carreer</span
+          >
+        </h1>
+        <a href="#tours" class="btn btn--white btn--animated discover"
+          >Discover our camps</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about" id="about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Exciting bootcamps for aspiring programmers
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              We teach you exactly what you will need
+            </h3>
+            <p class="paragraph">
+              Our bootcamps are tailor made for the needs of current work space
+              in 2021. We teach the newest technologies and programming
+              principle that will get you job-ready right after you graduate.
+            </p>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              We guarantee results
+            </h3>
+            <p class="paragraph">
+              In case you are not satisfied with our program, during the first 3
+              weeks of the bootcamp, we guarantee full refund.
+            </p>
+            <a href="#" class="btn-text">Learn more &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                srcset="img/nat-1.jpeg 300w, img/nat-1.jpeg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+                src="img/nat-1.jpeg"
+              />
+
+              <img
+                srcset="img/nat-2.jpeg 300w, img/nat-2.jpeg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+                src="img/nat-2.jpeg"
+              />
+
+              <img
+                srcset="img/nat-3.jpeg 300w, img/nat-3.jpeg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+                src="img/nat-3.jpeg"
+              />
+
+              <!-- <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-features" id="features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-world"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Teachers with 10+ years experience
+              </h3>
+              <p class="feature-box__text">
+                Every teacher has more than 10 years of experience in the
+                industry and they will provide a lot of tips and best practices
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-compass"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                You choose which areas you want to learn
+              </h3>
+              <p class="feature-box__text">
+                We do not forcu you to learn something you do not enjoy. You can
+                choose from becoming a front-end, back-end or full-stack
+                developer.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-map"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Option to take the course online
+              </h3>
+              <p class="feature-box__text">
+                We understand that many people can not attend our bootcamps
+                on-site and thats why we also stream our lectures, so that
+                distance will not stop you from achieving your dreams.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-heart"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Support after the bootcamp ends
+              </h3>
+              <p class="feature-box__text">
+                We are in contact with many companies that will give a chance to
+                promissing junior developers
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tours" id="tours">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Bootcamp options</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >Front end developer</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>3 months bootcamp</li>
+                    <li>up to 30 people</li>
+                    <li>5 lecturers</li>
+                    <li>HTML, CSS, JavaScript, Frameworks</li>
+                    <li>Difficulty: easy</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$3499</p>
+                  </div>
+                  <a href="#" class="btn btn--white">Book now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2"
+                    >Back end developer</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>3 months bootcamp</li>
+                    <li>up to 40 people</li>
+                    <li>10 lecturers</li>
+                    <li>Python, Django, SQL, MongoDB...</li>
+                    <li>Difficulty: medium</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$3999</p>
+                  </div>
+                  <a href="#" class="btn btn--white">Book now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3"
+                    >Full stack developer</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>6 month bootcamp</li>
+                    <li>up to 20 people</li>
+                    <li>15 lecturers</li>
+                    <li>Front end & Back end camps</li>
+                    <li>Difficulty: hard</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$7499</p>
+                  </div>
+                  <a href="#" class="btn btn--white">Book now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn btn--green">Discover all camps</a>
+        </div>
+      </section>
+
+      <section class="section-stories" id="stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="./img/video.mp4" type="video/mp4" />
+            Your browser is not supported!
+          </video>
+        </div>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">A word from our past students</h2>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-8.jpeg"
+                alt="Person on a tour"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Lucy Datina</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                This bootcamp changed my life
+              </h3>
+              <p>
+                After finishing my univeristy studies, I realized my field was
+                not meant for me. I needed to find what I actually want to do
+                with my life and here I found exactly that. During the bootcamp
+                I received tremendous support from lecturers with a lot of good
+                tips and best practices. Right after I graduated I landed an
+                entry level job in 3 weeks.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-9.jpeg"
+                alt="Person on a tour"
+                class="story__img"
+              />
+              <figcaption class="story__caption">John Doe</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                This bootcamp skyrocketed my carreer
+              </h3>
+              <p>
+                It was so challenging and full of knowledge! I have learned a
+                lot from this bootcamps. I had the best possible instructors,
+                respect! They explains everything that way so you get it
+                instantly. Unfortunately, at the end of the camp one instructor
+                explain a bit in a different way where I did not understand few
+                things, perhaps because of the advanced topics. Anyway, it was
+                awesome to be a part of this camp, thanks each of you,
+                especially Rodrigo for helping students throughout the course.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn-text">Read all stories &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-book" id="book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Start booking now</h2>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="name"
+                    placeholder="Full Name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full name</label>
+                </div>
+
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    id="email"
+                    placeholder="Email address"
+                    required
+                  />
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+
+                <div class="form__group u-margin-bottom-medium">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Online form
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      On-site form
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--green">Next step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="text-grid">
+               <div class="row">
+                   <div class="col-1-of-2">
+                       Col 1 of 2
+                   </div>
+                   <div class="col-1-of-2">
+                       Col 1 of 2
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-1-of-3">
+                       Col 1 of 3
+                   </div>
+                   <div class="col-1-of-3">
+                       Col 1 of 3
+                   </div>
+                   <div class="col-1-of-3">
+                       Col 1 of 3
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-1-of-3">
+                       Col 1 of 3
+                    </div>
+                    <div class="col-2-of-3">
+                        Col 2 of 3
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-4">
+                        Col 1 of 4
+                    </div>
+                    <div class="col-1-of-4">
+                        Col 1 of 4
+                    </div>
+                    <div class="col-1-of-4">
+                        Col 1 of 4
+                    </div>
+                    <div class="col-1-of-4">
+                        Col 1 of 4
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-4">
+                        Col 1 of 4
+                    </div>
+                    <div class="col-1-of-4">
+                        Col 1 of 4
+                    </div>
+                    <div class="col-2-of-4">
+                        Col 2 of 4
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-4">
+                        Col 1 of 4
+                    </div>
+                    <div class="col-3-of-4">
+                        Col 3 of 4
+                    </div>
+                </div>
+           </div> -->
+    </main>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Peter Strelec</a> for
+            personal learning outcomes.
+            <a href="#" class="footer__link">Contact me</a>. Copyright &copy;
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
